@@ -1,0 +1,8 @@
+---
+applications:
+- name: item-upload-ui
+  instances: 2
+  memory: 64M
+  disk_quota: 64M
+  services:
+  - logdrain

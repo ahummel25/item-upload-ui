@@ -1,0 +1,17 @@
+{
+  "remote": {
+    "target": "apps-local.wwt.com",
+    "isSubdomainBased": true
+  },
+  "applications": {
+    "ports": {
+      "item-upload-ui": 8080
+    },
+    "routeToLocal": {
+      "item-upload-ui": true
+    },
+    "modifyHostHeader": {
+      "cdn": true
+    }
+  }
+}

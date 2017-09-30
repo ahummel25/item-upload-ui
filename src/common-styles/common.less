@@ -1,0 +1,28 @@
+/*
+ * Common styles that cannot be stored in a more modular less file
+ */
+
+@navbarHeight: 8px;
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    #center {
+        text-align: center;
+    }
+}
+
+#content-main {
+    padding-top: @titleBarHeight + @navbarHeight;
+}
+
+.msie.snp-open {
+    .pmr-navbar {
+        position: absolute;
+    }
+}
+
+.upload-align{
+    margin: auto;
+    width: 50%;
+}

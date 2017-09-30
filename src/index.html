@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="item-upload-ui" id="ng-app">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Upload UI</title>
+    <link href="//www.wwt.com/cdn/side-nav/dist/side-nav.css" type="text/css" media="screen, projection" rel="stylesheet"/>
+    <base href="/">
+    <link href="app.css" type="text/css" media="screen, projection" rel="stylesheet"/>
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
+
+    <script type="text/javascript">
+        var supportedBrowsers =
+            [
+                {
+                    browserTitle: "Chrome",
+                    minimumVersion: 39,
+                    browserLogo: 'chrome-logo.png',
+                    browserLink: 'https://www.google.com/intl/en_us/chrome/browser/'
+                },
+                {
+                    browserTitle: "Firefox",
+                    minimumVersion: 34,
+                    browserLogo: 'firefox-logo.png',
+                    browserLink: 'http://www.mozilla.org/en-US/firefox/new/'
+                },
+                {
+                    browserTitle: "Safari",
+                    minimumVersion: 8,
+                    browserLogo: 'safari-logo.png',
+                    browserLink: 'http://support.apple.com/downloads/#safari'
+                },
+                {
+                    browserTitle: "MSIE",
+                    minimumVersion: 10,
+                    browserLogo: 'internet-explorer-logo.png',
+                    browserLink: 'http://windows.microsoft.com/en-us/internet-explorer/download-ie'
+                }
+
+            ];
+        window.wwtTestBrowserSupportCustom = function(browserTestFunction) {
+            browserTestFunction('item upload ui', supportedBrowsers, 'img/');
+        };
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <message></message>
+        <div ng-include src="'titleBar/titleBar.html'"></div>
+        <div ng-include src="'nav/nav.html'"></div>
+        <div ng-include src="'upload/upload.html'"></div>
+
+    </div>
+
+    <script src="third-party.js" type="text/javascript"></script>
+    <script src="//www.wwt.com/cdn/side-nav/dist/side-nav.js"></script>
+    <script src="//www.wwt.com/cdn/side-nav/dist/init-side-nav.js"></script>
+    <script src="templates.js" type="text/javascript"></script>
+    <script src="internal.js" type="text/javascript"></script>
+
+</body>
+</html>
